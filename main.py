@@ -183,6 +183,14 @@ def get_data():
     response.status = "200"
     return response
 
+@app.route('/', methods=['GET'])
+def check():
+
+    response = Response()
+    response.headers['Content-type'] = 'application/json; charset=utf-8'
+    response.headers['Access-Control-Allow-Origin'] = '*'
+    response.status = "200"
+    return response
 
 class JSONEncoder(json.JSONEncoder):
     def default(self, o):
