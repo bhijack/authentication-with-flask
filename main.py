@@ -14,7 +14,7 @@ key = "bozshijack"
 
 
 def getCollection():
-    db = MongoClient("mongodb://1palette:Qy9jcErb3UKEnnJr@127.0.0.1:27017/")
+    db = MongoClient("mongodb://")
     dbTest = db["test_authen_system"]
     collection = dbTest["users"]
     return collection
